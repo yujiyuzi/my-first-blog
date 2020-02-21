@@ -7,7 +7,7 @@ def post_list(request):
     #posts = Post.objects.filter(id=1)
     # posts = "aaaaaaaaaaaa"
     #print('printprint')
-    return render(gitrequest, 'blog/post_list.html', {'posts': posts})
+    return render(request, 'blog/post_list.html', {'posts': posts})
 
 def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
